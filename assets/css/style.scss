@@ -22,6 +22,8 @@ $preto: #000000;
     text-decoration: none;
 }
 
+// Base
+
 html {
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -43,8 +45,13 @@ html {
 
 body {
     background: $branco;
+   
 
 }
+
+// ==============================
+
+// header
 
 header {
     width: 100%;
@@ -79,11 +86,15 @@ header {
     top: 10rem;
 }
 
+// header End
+
+// main
+
 main {
-    width: 100%;
-    height: 100vh;
     position: relative;
     top: 15rem;
+
+    // Primeiro conteudo
 
     .content__Primeiro {
         .content__flex {
@@ -94,7 +105,7 @@ main {
             color: #ffff;
             border-radius: 0 0 10% 0;
             cursor: pointer;
-            
+
 
 
             .txtLeft {
@@ -108,35 +119,94 @@ main {
 
         .content__flex--2 {
             width: 88%;
-           
+
 
             .img__flex {
-                img{
+                img {
                     border-radius: 0px 8% 0px 8%;
                 }
             }
-            
+
 
             .content__text {
-               margin-left: 5rem;
-               line-height: 2;
+                margin-left: 5rem;
+                line-height: 2;
             }
         }
     }
+
+    // ==============================
+
+    // conteudo em cards
 
     .cards__content {
         width: 100%;
         margin-top: 6rem;
     }
+
+    // ==============================
+
+    // Segundo conteudo
+
+    .content__Segundo {
+        width: 100%;
+        height: 25rem;
+
+
+        .article__container {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+
+            .article__text--left {
+
+                padding: 1.5rem 2rem;
+
+                h3 {
+                    font-size: 1rem;
+                    font-weight: bold;
+                }
+
+                p {
+                    font-size: 0.8rem;
+                }
+            }
+
+            .article__text--rigth {
+                -webkit-box-shadow: 0px 2px 39px -1px rgba(204, 204, 204, 1);
+                -moz-box-shadow: 0px 2px 39px -1px rgba(204, 204, 204, 1);
+                box-shadow: 0px 2px 39px -1px rgba(204, 204, 204, 1);
+
+                padding: 5rem 2rem;
+
+                h3 {
+                    font-size: 1rem;
+                    font-weight: bold;
+                }
+
+                p {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+
+
 }
+
+// main End
 
 
 // Medias Queries
 
+// 980px
+
 @media (max-width: 980px) {
     main {
-        .content__Primeiro{
+        .content__Primeiro {
             width: 100%;
+
             .content__flex {
                 flex-direction: column;
                 width: 90%;
@@ -151,15 +221,30 @@ main {
 
                 .content__text {
                     margin-top: 3rem;
-                 }
+                }
             }
         }
 
         .cards__content {
             flex-direction: column;
         }
+
+        .content__Segundo {
+            .article__container {
+                row-gap: 2;
+                flex-direction: column;
+
+                .article__text--rigth {
+                    padding: 2rem 2rem;
+                }
+            }
+        }
     }
 }
+
+// ==============================
+
+// 621px
 
 @media (max-width: 621px) {
 
@@ -178,22 +263,24 @@ main {
 
     main {
         .content__Primeiro {
-            
+            width: 100%;
 
-            .content__flex{
+
+            .content__flex {
                 width: 100%;
-                .video{
 
-                    img{
+                .video {
+
+                    img {
                         width: 100%;
                     }
-                    
+
                 }
             }
 
             .content__flex--2 {
                 .img__flex {
-                    img{
+                    img {
                         width: 300px;
                     }
                 }
@@ -202,3 +289,5 @@ main {
     }
 
 }
+
+// ==============================
