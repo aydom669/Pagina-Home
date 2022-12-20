@@ -254,6 +254,20 @@ main {
   }
 }
 
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .text__footer {
+    text-align: center;
+    span {
+      font-weight: bold;
+    }
+  }
+}
+
 // main End
 
 // Medias Queries
@@ -299,6 +313,7 @@ main {
     }
 
     .content__Terceira--circular {
+      margin-top: 20rem;
       .content__circular--container--flex {
         width: 100%;
         padding: 0 2rem;
@@ -360,6 +375,13 @@ main {
           margin-left: 0;
         }
       }
+    }
+  }
+
+  footer {
+    flex-direction: column;
+    .text__footer {
+      padding: 1rem 0;
     }
   }
 }
