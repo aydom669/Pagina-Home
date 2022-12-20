@@ -99,6 +99,7 @@ main {
     align-items: center;
     justify-content: center;
     overflow-y: hidden;
+    overflow-x: hidden;
     margin-top: 7rem; }
     main .content__Terceira--circular .content__circular--container--flex {
       width: 70rem;
@@ -147,10 +148,10 @@ main {
           color: #fff; }
 
 footer {
-  width: 100%;
   display: flex;
   justify-content: space-around;
-  align-items: center; }
+  align-items: center;
+  overflow: hidden; }
   footer .text__footer {
     text-align: center; }
     footer .text__footer span {
